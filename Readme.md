@@ -40,7 +40,9 @@ methods -
 
 * valueOf
 
+# Array 
 
+* copyWithin - basically used to replace
 
 
 
