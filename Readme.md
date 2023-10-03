@@ -25,6 +25,22 @@ methods -
 * seal - can't delete the keys
 
 
+# String 
+
+* fromCharCode - string from unicode 
+* fromCodePoint - string from unicode 
+* raw - string from unicode 
+* concat - concats two strings
+* ends/startsWith, includes, indexOf, padStart/End, 
+* repeat - repeats string n times.
+* slice - returns substring
+* split - returns array of split on the basis of separator string
+* toUpperCase/LowerCase
+* trim, trimStart/End
+
+* valueOf
+
+
 
 
 
