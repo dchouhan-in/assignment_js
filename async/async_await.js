@@ -1,17 +1,18 @@
 
-
-
-function logTime(count) {
+async function logTime(count) {
     let initialTime = Date.now()
-    generateFibonacciSeq(count).then((value) => {
-        console.log("value - ", value)
+
+    try {
+
+        sequence = await generateFibonacciSeq(count)
+        console.log("value - ", sequence)
         let currentTime = Date.now()
         console.log(`time taken - ${currentTime - initialTime}ms`)
-    }).catch((reason) => {
-        console.log(reason)
-    })
-}
 
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 function generateFibonacciSeq(count) {
 
@@ -33,6 +34,8 @@ function generateFibonacciSeq(count) {
         resolve(resultArray.slice(-1)[0])
     })
 }
+
+
 
 logTime(-1)
 logTime(300)
